@@ -1,0 +1,19 @@
+{
+    "name": "Icampaign",
+    "alias": "icampaign",
+    "description": "",
+    "keywords": [],
+    "version": "1.0.0",
+	"active": 1,
+    "order": 1,
+    "providers": [
+        "Modules\\Icampaign\\Providers\\IcampaignServiceProvider",
+        "Modules\\Icampaign\\Providers\\RouteServiceProvider",
+        "Modules\\Icampaign\\Providers\\EventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+
+    ],
+    "requires": []
+}
