@@ -45,6 +45,12 @@ class EloquentRecipientRepository extends EloquentBaseRepository implements Reci
       if (isset($filter->parentId)) {
         $query->where("parent_id", $filter->parentId);
       }
+
+      //Filter by parent ID
+      if (isset($filter->campaign)) {
+        $query->where("campaign_id", $filter->campaign);
+      }
+
     }
     /*== FIELDS ==*/
     if (isset($params->fields) && count($params->fields))
